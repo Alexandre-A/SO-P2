@@ -47,3 +47,22 @@ L     |-> F <-|
 Avaliação:
     - Relatório denovo ffs
     - valoriza-se deteção de erros, verificação dos valores dos semáforos (semup e semdown)
+
+Notas da aula TP:
+saveState(NULL,sh->fSt);
+Só cada agente é que pode mudar o seu próprio estado
+
+Podemos testar cada tipo de agente individualmente (make pl, make gl, make)
+all_bin -> ficheiros dos profs
+all -> versão de teste final, usa o código feito por nós
+
+usar clean.sh (ou ipcs e ipcrm)
+
+Usar o filter.sh para ser mais fácil analisar
+
+Podemos correr os programas mais que 1 vez: ./run 20
+
+Podem ser alterados pelos profesores os tempos dos players, goalies, referees, até para questões de teste
+
+Ideia tirada do Vasco -> Fazer diagrama de estados 
+
