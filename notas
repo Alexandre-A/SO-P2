@@ -31,20 +31,18 @@ ficheiros a alterar:
 (F)orming
 
 Estados
-    Goalies < 2 
+    Goalies < 2 **
  A ------------> W      -> SemDown(..., goaliesWaitTeam)
-|  \                       SemUp(..., playerRegisted)
+|  \ *                     SemUp(..., playerRegisted)
 |>2  \ = 2
 L     |-> F <-|
           |   |
            Not|All Team | Team Complete
           |-> |waiting  | SemUp(..., playersWaitTeam)
                         | SemDown(..., playersRegister)
-                        |
-                        |
-                        |
-                        |
-                       
+                        
+        * and All Team Complete
+       ** or Not All Teams 
 
 Avaliação:
     - Relatório denovo ffs
