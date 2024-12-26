@@ -143,7 +143,7 @@ static void arrive(int id)
     }
 
     /* TODO: insert your code here */
-    
+
     // É atribuído o estado de arriving
     (sh->fSt).st.goalieStat[id] = 0x41; //A
     saveState(nFic,&sh->fSt);
@@ -207,13 +207,14 @@ static int goalieConstituteTeam (int id)
             (sh->fSt).playersFree = (sh->fSt).playersFree + -4;
             (sh->fSt).goaliesFree = (sh->fSt).goaliesFree + -1;
 
-
+            //Registo dos players
             for (int i = 0; i < 4; i = i + 1) {
-                semUp(semgid,sh->playersWaitTeam); // Dá um up ao playersWaitTeam, para que os players possam se registar na equipa 
+                semUp(semgid,sh->playersWaitTeam); // Dá um up ao playersWaitTeam, para que os 4 players possam se registar na equipa 
                                                     //(ver ultimo if no caso do goalie, semelhante)
                 semDown(semgid,sh->playerRegistered); //Blocks the goalie process until the signaled player (from the semUp above) registers itself with the team
                                                     // (o player trata de dar up ao playerRegistered, no seu código)
             }
+
             ret = (sh->fSt).teamId; //Guarda o id da equipa onde o guarda-redes que forma a equipa vai ficar
             (sh->fSt).teamId = (sh->fSt).teamId + 1; //Atualiza o id da equipa seguinte
 
@@ -266,7 +267,7 @@ static void waitReferee (int id, int team)
         saveState(nFic,&sh->fSt);
     }
     else{
-        (sh->fSt).st.goalieStat[id] = 0x53; //Sa
+        (sh->fSt).st.goalieStat[id] = 0x53; //S
         saveState(nFic,&sh->fSt);
     }
 
