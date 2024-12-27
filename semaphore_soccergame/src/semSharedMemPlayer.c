@@ -147,7 +147,7 @@ static void arrive(int id)
     /* TODO: insert your code here */
 
     // É atribuído o estado de arriving
-    (sh->fSt).st.playerStat[id] = 0x41; //A
+    (sh->fSt).st.playerStat[id] = ARRIVING; //A
     saveState(nFic,&sh->fSt);
     
     if (semUp (semgid, sh->mutex) == -1) {                                                         /* exit critical region */
@@ -192,20 +192,20 @@ static int playerConstituteTeam (int id)
     (sh->fSt).playersFree +=1;
     if ((sh->fSt).playersArrived>8){
         // É atribuído o estado de Late
-        (sh->fSt).st.playerStat[id] = 0x4c; //L
+        (sh->fSt).st.playerStat[id] = LATE; //L
         saveState(nFic,&sh->fSt);
         ret = 0;
     } 
     else{
         if (((sh->fSt).playersFree<4)||((sh->fSt).goaliesFree<1)){
             // É atribuído o estado de Waiting
-            (sh->fSt).st.playerStat[id] = 0x57; // W 
+            (sh->fSt).st.playerStat[id] = WAITING_TEAM; // W 
             saveState(nFic,&sh->fSt);
             waitFormation = true;
         }
         else{                    
             // É atribuído o estado de Forming Team
-            (sh->fSt).st.playerStat[id] = 0x46; // F
+            (sh->fSt).st.playerStat[id] = FORMING_TEAM; // F
             saveState(nFic,&sh->fSt);
 
             //Remoção do número de elementos constituintes de uma equipa
@@ -271,11 +271,11 @@ static void waitReferee (int id, int team)
 
     // É atribuído o estado de waiting start, dependendo da equipa a que pertence
     if (team ==1){
-        (sh->fSt).st.playerStat[id] = 0x73; //s
+        (sh->fSt).st.playerStat[id] = WAITING_START_1; //s
         saveState(nFic,&sh->fSt);
     }
     else{
-        (sh->fSt).st.playerStat[id] = 0x53; //S
+        (sh->fSt).st.playerStat[id] = WAITING_START_2; //S
         saveState(nFic,&sh->fSt);
     }
 
@@ -314,11 +314,11 @@ static void playUntilEnd (int id, int team)
 
     // É atribuído o estado de playing, dependendo da equipa a que pertence
     if (team ==1){
-        (sh->fSt).st.playerStat[id] = 0x70; //p
+        (sh->fSt).st.playerStat[id] = PLAYING_1; //p
         saveState(nFic,&sh->fSt);
     }
     else{
-        (sh->fSt).st.playerStat[id] = 0x50; //P
+        (sh->fSt).st.playerStat[id] = PLAYING_2; //P
         saveState(nFic,&sh->fSt);
     }
 
