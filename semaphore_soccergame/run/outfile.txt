@@ -1,0 +1,480 @@
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 1[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 2[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 3[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   W   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 4[0m
+G00 G01 G02 R01
+ .   W   .   .  
+ W   .   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 5[0m
+G00 G01 G02 R01
+ .   W   .   .  
+ W   .   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 6[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 7[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 8[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 9[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 10[0m
+G00 G01 G02 R01
+ .   .   .   W  
+ .   .   W   .  
+ .   W   .   .  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 11[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   .   W  
+ .   W   .   .  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 12[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 13[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 14[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 15[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 16[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 17[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 18[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 19[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 20[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 21[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 22[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 23[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 24[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   W   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 25[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 26[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 27[0m
+G00 G01 G02 R01
+ .   W   .   .  
+ .   .   W   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 28[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   .   W  
+ .   W   .   .  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 29[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   .  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 30[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 31[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   .   W  
+ .   W   .   .  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 32[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 33[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 34[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 35[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 36[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   W   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 37[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 38[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 39[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 40[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 41[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   W   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 42[0m
+G00 G01 G02 R01
+ .   W   .   .  
+ .   .   W   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 43[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 44[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 45[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 46[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   .   W  
+ .   W   .   .  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 47[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   .   W  
+ .   W   .   .  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 48[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 49[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 50[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 51[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 52[0m
+G00 G01 G02 R01
+ .   .   W   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 53[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   W   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 54[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 55[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 56[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 57[0m
+G00 G01 G02 R01
+ .   .   W   .  
+ W   .   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 58[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   W   .   .  
+ .   .   .   W  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 59[0m
+G00 G01 G02 R01
+ W   .   .   .  
+ .   .   .   W  
+ .   W   .   .  
+
+não deviam ser sempre 3 dabalius
+ em primeiro nos goalies e referees, certo?? 
+[34;1mRun n.º 60[0m
+G00 G01 G02 R01
+ .   .   W   .  
+ W   .   .   .  
+ .   .   .   W  
+
