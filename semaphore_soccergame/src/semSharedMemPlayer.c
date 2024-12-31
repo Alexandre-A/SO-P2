@@ -214,20 +214,35 @@ static int playerConstituteTeam (int id)
 
             // Registo dos players
             for (int i = 0; i < 3; i += 1) {
-                semUp(semgid,sh->playersWaitTeam); // Dá um up ao playersWaitTeam, para que os restantes 3 players 
-                                                //possam se registar na equipa (ver ultimo if no caso do goalie, semelhante)
-                semDown(semgid,sh->playerRegistered); //Blocks the player process until the signaled player (from the semUp above) registers itself with the team
+                if (semUp(semgid,sh->playersWaitTeam)==-1){ // Dá um up ao playersWaitTeam, para que os restantes 3 players
+                    perror ("error on the up operation for semaphore access (PL)"); //possam se registar na equipa (ver ultimo if no caso do goalie, semelhante)
+                    exit (EXIT_FAILURE);
+                }  
+                
+                if (semDown(semgid,sh->playerRegistered)==-1){
+                    perror ("error on the up operation for semaphore access (PL)");
+                    exit (EXIT_FAILURE);
+                } //Blocks the player process until the signaled player (from the semUp above) registers itself with the team
             }
 
             // Registo do goalie
-            semUp(semgid,sh->goaliesWaitTeam); // Dá um up ao goaliesWaitTeam, para que o goalie possa se registar na equipa 
-            semDown(semgid,sh->playerRegistered); //Blocks the player process until the signaled player (from the semUp above) registers itself with the team
+            if (semUp(semgid,sh->goaliesWaitTeam)==-1){ // Dá um up ao goaliesWaitTeam, para que o goalie possa se registar na equipa 
+                perror ("error on the up operation for semaphore access (PL)");
+                exit (EXIT_FAILURE);
+            } 
+            if (semDown(semgid,sh->playerRegistered)==-1){
+                perror ("error on the up operation for semaphore access (PL)");
+                exit (EXIT_FAILURE);
+            } //Blocks the player process until the signaled player (from the semUp above) registers itself with the team
 
 
             ret = (sh->fSt).teamId; //Guarda o id da equipa onde o guarda-redes que forma a equipa vai ficar
             (sh->fSt).teamId = (sh->fSt).teamId + 1; //Atualiza o id da equipa seguinte
 
-            semUp(semgid,sh->refereeWaitTeams); //Liberta o semáforo que bloqueia o referee, após a formação de cada equipa
+            if (semUp(semgid,sh->refereeWaitTeams)==-1){ //Liberta o semáforo que bloqueia o referee, após a formação de cada equipa
+                perror ("error on the up operation for semaphore access (PL)");
+                exit (EXIT_FAILURE);
+            } 
         }
     }
 
@@ -243,9 +258,15 @@ static int playerConstituteTeam (int id)
     // playersWaitTeam (o semDown bloqueia até ser dado esse up), e depois
     // liberta o playerRegistered para o jogador que forma a equipa poder continuar o seu algoritmo (ver acima)
     if (waitFormation){
-        semDown(semgid,sh->playersWaitTeam);
+        if (semDown(semgid,sh->playersWaitTeam)==-1){
+            perror ("error on the up operation for semaphore access (PL)");
+            exit (EXIT_FAILURE);
+        }
         ret = (sh->fSt).teamId;
-        semUp(semgid,sh->playerRegistered);
+        if (semUp(semgid,sh->playerRegistered)==-1){
+            perror ("error on the up operation for semaphore access (PL)");
+            exit (EXIT_FAILURE);
+        }
     }
 
     return ret;
@@ -287,10 +308,16 @@ static void waitReferee (int id, int team)
     /* TODO: insert your code here */
 
     //Bloqueia neste estado até o referee dar up (ou seja estar pronto)
-    semDown(semgid,sh->playersWaitReferee);
+    if (semDown(semgid,sh->playersWaitReferee)==-1){
+        perror ("error on the up operation for semaphore access (PL)");
+        exit (EXIT_FAILURE);
+    }
 
     // Informa o referee que já está playing -> Talvez depois disto o referee atualize para refereeing
-    semUp(semgid,sh->playing);
+    if (semUp(semgid,sh->playing)==-1){
+        perror ("error on the up operation for semaphore access (PL)");
+        exit (EXIT_FAILURE);
+    }
 
 }
 
@@ -330,7 +357,10 @@ static void playUntilEnd (int id, int team)
     /* TODO: insert your code here */
 
     // Fica bloqueado (espera) no estado playing até o referee indicar o end
-    semDown(semgid,sh->playersWaitEnd);
+    if(semDown(semgid,sh->playersWaitEnd)==-1){
+        perror ("error on the up operation for semaphore access (PL)");
+        exit (EXIT_FAILURE);
+    }
 
 }
 

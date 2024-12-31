@@ -209,16 +209,24 @@ static int goalieConstituteTeam (int id)
 
             //Registo dos players
             for (int i = 0; i < 4; i = i + 1) {
-                semUp(semgid,sh->playersWaitTeam); // Dá um up ao playersWaitTeam, para que os 4 players possam se registar na equipa 
-                                                    //(ver ultimo if no caso do goalie, semelhante)
-                semDown(semgid,sh->playerRegistered); //Blocks the goalie process until the signaled player (from the semUp above) registers itself with the team
-                                                    // (o player trata de dar up ao playerRegistered, no seu código)
+                if (semUp(semgid,sh->playersWaitTeam)==-1){ // Dá um up ao playersWaitTeam, para que os 4 players possam se registar na equipa
+                    perror ("error on the up operation for semaphore access (GL)"); //(ver ultimo if no caso do goalie, semelhante)
+                    exit (EXIT_FAILURE);
+                }  
+
+                if (semDown(semgid,sh->playerRegistered)== -1){ //Bloqueia o processo do goalie até o jogador sinalizado (do semUp acima) registar-se na equipa
+                    perror ("error on the up operation for semaphore access (GL)"); // (o player trata de dar up ao playerRegistered, no seu código)
+                    exit (EXIT_FAILURE);
+                }                            
             }
 
             ret = (sh->fSt).teamId; //Guarda o id da equipa onde o guarda-redes que forma a equipa vai ficar
             (sh->fSt).teamId = (sh->fSt).teamId + 1; //Atualiza o id da equipa seguinte
 
-            semUp(semgid,sh->refereeWaitTeams); //Liberta o semáforo que bloqueia o referee, após a formação de cada equipa
+            if (semUp(semgid,sh->refereeWaitTeams)== -1){ //Liberta o semáforo que bloqueia o referee, após a formação de cada equipa
+                perror ("error on the up operation for semaphore access (GL)");
+                exit (EXIT_FAILURE); 
+            }
         }
     }
 
@@ -235,9 +243,15 @@ static int goalieConstituteTeam (int id)
     // goaliesWaitTeam (o semDown bloqueia até ser dado esse up), e depois
     // liberta o playerRegistered para o jogador que forma a equipa poder continuar o seu algoritmo (ver acima)
     if (waitFormation){
-        semDown(semgid,sh->goaliesWaitTeam);
+        if (semDown(semgid,sh->goaliesWaitTeam)==-1){
+            perror ("error on the up operation for semaphore access (GL)");
+            exit (EXIT_FAILURE); 
+        }
         ret = (sh->fSt).teamId;
-        semUp(semgid,sh->playerRegistered);
+        if (semUp(semgid,sh->playerRegistered)==-1){
+            perror ("error on the up operation for semaphore access (GL)");
+            exit (EXIT_FAILURE); 
+        }
     }
 
     return ret;
@@ -276,14 +290,20 @@ static void waitReferee (int id, int team)
         exit (EXIT_FAILURE);
     }
 
-    //Bloqueia neste estado até o referee dar up (ou seja estar pronto)
-    semDown(semgid,sh->playersWaitReferee);
-
-    // Informa o referee que já está playing -> Talvez depois disto o referee atualize para refereeing
-    semUp(semgid,sh->playing);
-    
     /* TODO: insert your code here */
 
+    //Bloqueia neste estado até o referee dar up (ou seja estar pronto)
+    if (semDown(semgid,sh->playersWaitReferee)==-1){
+        perror ("error on the up operation for semaphore access (GL)"); 
+        exit (EXIT_FAILURE); 
+    }
+
+    // Informa o referee que já está playing -> Talvez depois disto o referee atualize para refereeing
+    if (semUp(semgid,sh->playing)==-1){
+        perror ("error on the up operation for semaphore access (GL)");
+        exit (EXIT_FAILURE); 
+    }
+    
 }
 
 /**
@@ -322,7 +342,10 @@ static void playUntilEnd (int id, int team)
     /* TODO: insert your code here */
 
     // Fica bloqueado (espera) no estado playing até o referee indicar o end
-    semDown(semgid,sh->playersWaitEnd);
+    if (semDown(semgid,sh->playersWaitEnd)==-1){
+        perror ("error on the down operation for semaphore access (GL)");
+        exit (EXIT_FAILURE);
+    }
     
 }
 
