@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="69.94651mm"
+   height="24.423246mm"
+   viewBox="0 0 69.94651 24.423246"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="esquemas.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.5"
+     inkscape:cx="1422"
+     inkscape:cy="700"
+     inkscape:window-width="1910"
+     inkscape:window-height="1044"
+     inkscape:window-x="4"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="69.94651"
+       height="24.423246"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient61"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#e10000;stop-opacity:1;"
+         offset="0.31847131"
+         id="stop60" />
+      <stop
+         style="stop-color:#e66a6a;stop-opacity:0;"
+         offset="1"
+         id="stop61" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient57"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#0f400f;stop-opacity:1;"
+         offset="0"
+         id="stop58" />
+      <stop
+         style="stop-color:#106534;stop-opacity:1;"
+         offset="1"
+         id="stop59" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient56"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ed0000;stop-opacity:1;"
+         offset="0"
+         id="stop56" />
+      <stop
+         style="stop-color:#e66a6a;stop-opacity:1;"
+         offset="1"
+         id="stop57" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient56"
+       id="radialGradient57-9-2"
+       cx="55.775265"
+       cy="56.926884"
+       fx="55.775265"
+       fy="56.926884"
+       r="2.0828822"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient57"
+       id="radialGradient59-5-1"
+       cx="55.775265"
+       cy="56.926884"
+       fx="55.775265"
+       fy="56.926884"
+       r="2.0828822"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient61"
+       id="radialGradient60-9-7"
+       gradientUnits="userSpaceOnUse"
+       cx="55.775265"
+       cy="56.926884"
+       fx="55.775265"
+       fy="56.926884"
+       r="2.0828822"
+       gradientTransform="matrix(1.6907815,0,0,1.6907815,-38.528536,-39.324052)" />
+    <rect
+       x="158.55922"
+       y="196.04289"
+       width="94.17054"
+       height="32.842529"
+       id="rect54-6-5" />
+    <marker
+       orient="auto-start-reverse"
+       refY="0"
+       refX="0"
+       id="ThreeDots-2-0"
+       inkscape:stockid="Ellipsis"
+       style="overflow:visible"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <g
+         transform="scale(0.5)"
+         id="g33-0-3">
+        <circle
+           cx="4"
+           cy="0"
+           r="1"
+           style="fill:context-stroke;stroke:context-stroke"
+           id="circle31-5-6" />
+        <circle
+           cx="8"
+           cy="0"
+           r="1"
+           style="fill:context-stroke;stroke:context-stroke"
+           id="circle32-52-1" />
+        <circle
+           cx="12"
+           cy="0"
+           r="1"
+           style="fill:context-stroke;stroke:context-stroke"
+           id="circle33-9-0" />
+      </g>
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-401.90212,-48.418744)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#323232;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+       x="452.47568"
+       y="50.535412"
+       id="text11-88-3"><tspan
+         sodipodi:role="line"
+         id="tspan11-9-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:'Latin Modern Roman Slanted';-inkscape-font-specification:'Latin Modern Roman Slanted';fill:#323232;fill-opacity:1;stroke-width:1"
+         x="452.47568"
+         y="50.535412">waitForTeams()</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, ';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#323232;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+       x="413.75577"
+       y="57.298573"
+       id="text11-5-1-8-1"><tspan
+         sodipodi:role="line"
+         id="tspan11-5-0-8-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:'Latin Modern Roman Slanted';-inkscape-font-specification:'Latin Modern Roman Slanted';fill:#323232;fill-opacity:1;stroke-width:1"
+         x="413.75577"
+         y="57.298573">semDown()</tspan></text>
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path23-3-6-2-5"
+       cx="443.57562"
+       cy="55.332668"
+       r="2.3" />
+    <g
+       id="g17-6-4"
+       transform="translate(362.41963,13.75404)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:3.88056px;font-family:'Latin Modern Roman Demi';-inkscape-font-specification:'Latin Modern Roman Demi Semi-Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round"
+         x="88.817352"
+         y="43.128998"
+         id="text3-5-7"><tspan
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:1"
+           x="88.817352"
+           y="43.128998"
+           id="tspan4-2-6">W<tspan
+   style="font-size:1.41111px"
+   id="tspan23-6-5"> </tspan>AITING</tspan><tspan
+           sodipodi:role="line"
+           style="text-align:center;text-anchor:middle;stroke-width:1"
+           x="88.817352"
+           y="47.979698"
+           id="tspan6-5-6">FOR TEAMS</tspan></text>
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.199999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect14-4-3-6-87-9"
+         width="33.388226"
+         height="11.802787"
+         x="72.078613"
+         y="38.319981" />
+    </g>
+    <g
+       id="g61-0-3"
+       transform="translate(363.04864,11.41267)">
+      <g
+         id="g39-8-7"
+         transform="matrix(0.59750962,0,0,0.64457617,30.14405,15.864261)"
+         style="stroke-width:1.61135">
+        <g
+           id="g40-6-4"
+           transform="translate(7.5820921,-2.5995646)">
+          <g
+             id="g28-2-5"
+             transform="translate(0,0.27179416)"
+             style="stroke-width:1.61135">
+            <rect
+               style="fill:#4a4a4a;fill-opacity:1;stroke:#4a4a4a;stroke-width:2.57816;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+               id="rect37-4-2"
+               width="5.15625"
+               height="10.185996"
+               x="53.19714"
+               y="53.99337" />
+          </g>
+          <g
+             id="g38-7-5"
+             style="stroke-width:1.61135">
+            <circle
+               style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.161135;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+               id="path28-9-4"
+               cx="55.775265"
+               cy="56.652924"
+               r="2.2380319" />
+            <circle
+               style="fill:url(#radialGradient57-9-2);fill-opacity:1;stroke:none;stroke-width:0.483406;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.966813, 0.966813;stroke-dashoffset:0;stroke-opacity:1"
+               id="circle28-3-7"
+               cx="55.775265"
+               cy="56.926884"
+               r="2.0828822" />
+            <g
+               id="g30-9-4"
+               transform="translate(0,5.2916669)"
+               style="stroke-width:1.61135">
+              <circle
+                 style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.483406;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.966813, 0.966813;stroke-dashoffset:0;stroke-opacity:1"
+                 id="circle29-2-4"
+                 cx="55.775265"
+                 cy="56.652924"
+                 r="2.2380319" />
+              <circle
+                 style="fill:url(#radialGradient59-5-1);fill-opacity:1;stroke:none;stroke-width:0.483406;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.966813, 0.966813;stroke-dashoffset:0;stroke-opacity:1"
+                 id="circle30-8-3"
+                 cx="55.775265"
+                 cy="56.926884"
+                 r="2.0828822" />
+            </g>
+            <circle
+               style="fill:url(#radialGradient60-9-7);fill-opacity:1;stroke:none;stroke-width:0.483406;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.966813, 0.966813;stroke-dashoffset:0;stroke-opacity:1"
+               id="circle59-3-0"
+               cx="55.775257"
+               cy="56.926876"
+               r="3.521699" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,360.43703,8.24761)"
+       id="text54-7-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Latin Modern Roman Slanted';-inkscape-font-specification:'Latin Modern Roman Slanted';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect54-6-5);display:inline;fill:#272727;fill-opacity:1;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"><tspan
+         x="163.50453"
+         y="203.49097"
+         id="tspan2"><tspan
+           style="font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, '"
+           id="tspan1">Aguarda pela libertação </tspan></tspan><tspan
+         x="175.72054"
+         y="214.47097"
+         id="tspan4"><tspan
+   style="font-family:'Latin Modern Roman';-inkscape-font-specification:'Latin Modern Roman, '"
+   id="tspan3">(up) do semáforo</tspan> </tspan><tspan
+         x="166.44457"
+         y="226.13762"
+         id="tspan6"><tspan
+           style="font-size:9.33333px;font-family:'Latin Modern Mono Slanted';-inkscape-font-specification:'Latin Modern Mono Slanted'"
+           id="tspan5">refereeWaitTeams</tspan></tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       id="rect80-2-4"
+       width="25.528925"
+       height="12.287234"
+       x="402.00208"
+       y="58.104145" />
+    <g
+       id="g88-4-0"
+       transform="translate(362.41963,11.41267)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         d="m 87.040313,57.40542 c 1.696607,0 1.781827,-0.844233 1.732413,-3.345795"
+         id="path20-8-6"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.300001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.600002, 0.600002;stroke-dashoffset:0;stroke-opacity:1"
+         d="M 87.041044,57.40541 H 65.218977"
+         id="path27-5-8" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ThreeDots-2-0)"
+         d="m 88.772725,59.404324 c 0,-1.066677 0.102988,-1.998914 -1.732412,-1.998914"
+         id="path88-8-9"
+         sodipodi:nodetypes="cc" />
+    </g>
+  </g>
+</svg>
