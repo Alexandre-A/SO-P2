@@ -190,14 +190,14 @@ static int playerConstituteTeam (int id)
     waitFormation = false;
     (sh->fSt).playersArrived += 1;
     (sh->fSt).playersFree +=1;
-    if ((sh->fSt).playersArrived>8){
+    if ((sh->fSt).playersArrived>2*NUMTEAMPLAYERS){
         // É atribuído o estado de Late
         (sh->fSt).st.playerStat[id] = LATE; //L
         saveState(nFic,&sh->fSt);
         ret = 0;
     } 
     else{
-        if (((sh->fSt).playersFree<4)||((sh->fSt).goaliesFree<1)){
+        if (((sh->fSt).playersFree<NUMTEAMPLAYERS)||((sh->fSt).goaliesFree<NUMTEAMGOALIES)){
             // É atribuído o estado de Waiting
             (sh->fSt).st.playerStat[id] = WAITING_TEAM; // W 
             saveState(nFic,&sh->fSt);
@@ -209,11 +209,11 @@ static int playerConstituteTeam (int id)
             saveState(nFic,&sh->fSt);
 
             //Remoção do número de elementos constituintes de uma equipa
-            (sh->fSt).playersFree = (sh->fSt).playersFree + -4;
-            (sh->fSt).goaliesFree = (sh->fSt).goaliesFree + -1;
+            (sh->fSt).playersFree = (sh->fSt).playersFree + -NUMTEAMPLAYERS;
+            (sh->fSt).goaliesFree = (sh->fSt).goaliesFree + -NUMTEAMGOALIES;
 
             // Registo dos players
-            for (int i = 0; i < 3; i += 1) {
+            for (int i = 0; i < NUMTEAMPLAYERS-1; i += 1) {
                 if (semUp(semgid,sh->playersWaitTeam)==-1){ // Dá um up ao playersWaitTeam, para que os restantes 3 players
                     perror ("error on the up operation for semaphore access (PL)"); //possam se registar na equipa (ver ultimo if no caso do goalie, semelhante)
                     exit (EXIT_FAILURE);
