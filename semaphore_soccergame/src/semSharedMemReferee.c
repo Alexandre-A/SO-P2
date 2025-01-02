@@ -214,9 +214,13 @@ static void startGame ()
     /* The referee orders the players that the game is starting by lifting/releasing the semaphore playersWaitReferee,
     which will allow them to leave waitReferee() and proceed to their next functions. 
     With that we ensure that they indeed started playing by waiting for each of their lift on the playing semaphore. 
-    Thus we run both semUp and semDown 10 times, because we have 10 players (we're considering goalies as players often,
-    for the sake of simplicity of commenting) */
-    for (int tot = 0; tot < NUMPLAYERS; tot++) {
+    Thus we run both semUp and semDown X times, related to X total players in the game (we're considering goalies as players often,
+    for the sake of simplicity of commenting) 
+    X = The total of a team's players and goalies, multiplied by two
+    => X = 2 * (NUMTEAMGOALIES + NUMTEAMPLAYERS) 
+    Using this expression is useful in case someone decides to change the team parameters,
+    which is possible with our implementation! */
+    for (int tot = 0; tot < 2 * (NUMTEAMGOALIES + NUMTEAMPLAYERS); tot++) {
         if (semUp(semgid, sh->playersWaitReferee)==-1){
             perror ("error on the up operation for semaphore access (RF)");
             exit (EXIT_FAILURE);
@@ -278,11 +282,12 @@ static void endGame ()
         exit (EXIT_FAILURE);
     }
 
-    /* In order to end the game the 10 players need to be able to perform the semDown one more time, for the playersWaitEnd semaphore,
+    /* In order to end the game, ALL players need to be able to perform the semDown one more time, for the playersWaitEnd semaphore,
     so that's all the referee has yet to do, releasing the signal to no longer have anyone waiting for the game end. 
-    All the entities stop, presumably gracefully, and the simulation ends well! */
+    All the entities stop, presumably gracefully, and the simulation ends well! 
+    All players (in-game) = 2 * (NUMTEAMGOALIES + NUMTEAMPLAYERS)*/
 
-    for (int i = 0; i < NUMPLAYERS; i++)
+    for (int i = 0; i < 2 * (NUMTEAMGOALIES + NUMTEAMPLAYERS); i++)
         if (semUp(semgid,sh->playersWaitEnd)==-1){
             perror ("error on the up operation for semaphore access (RF)");
             exit (EXIT_FAILURE);
