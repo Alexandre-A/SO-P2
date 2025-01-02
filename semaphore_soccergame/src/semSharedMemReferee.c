@@ -142,7 +142,6 @@ static void arrive ()
         exit (EXIT_FAILURE);
     }
 
-    /* TODO: insert your code here *////////////////////////
     sh->fSt.st.refereeStat = ARRIVINGR; /* Changes state to (A)RRIVING */
     saveState(nFic, &sh->fSt); /* Saves the state */
 
@@ -169,18 +168,17 @@ static void waitForTeams ()
         exit (EXIT_FAILURE);
     }
 
-    /* TODO: insert your code here */
-    sh->fSt.st.refereeStat = WAITING_TEAMS;
-    saveState(nFic, &sh->fSt);
-
+    sh->fSt.st.refereeStat = WAITING_TEAMS;   /* Changes state to (W)AITING TEAMS */
+    saveState(nFic, &sh->fSt);                /* Saves the state */
 
     if (semUp (semgid, sh->mutex) == -1) {                                                        /* leave critical region */
         perror ("error on the up operation for semaphore access (RF)");
         exit (EXIT_FAILURE);
     }
 
-    /* TODO: insert your code here */
-    if (semDown(semgid,sh->refereeWaitTeams)==-1){
+    /* We try to acquire the signal required to exit the code, remaining blocked (waiting) until 
+    the 2 forming players release the semaphore (hence for two semUp()'s we have 2 semDown()'s!) */
+    if (semDown(semgid,sh->refereeWaitTeams)==-1){  
         perror ("error on the up operation for semaphore access (RF)");
         exit (EXIT_FAILURE);
     }
@@ -205,17 +203,19 @@ static void startGame ()
         exit (EXIT_FAILURE);
     }
 
-    /* TODO: insert your code here */
-    sh->fSt.st.refereeStat = STARTING_GAME;
-    saveState(nFic, &sh->fSt);
+    sh->fSt.st.refereeStat = STARTING_GAME;   /* Changes state to (S)TARTING GAME */
+    saveState(nFic, &sh->fSt);                /* Saves the state */
 
     if (semUp (semgid, sh->mutex) == -1) {                                                        /* leave critical region */
         perror ("error on the up operation for semaphore access (RF)");
         exit (EXIT_FAILURE);
     }
 
-    /* TODO: insert your code here */
-    
+    /* The referee orders the players that the game is starting by lifting/releasing the semaphore playersWaitReferee,
+    which will allow them to leave waitReferee() and proceed to their next functions. 
+    With that we ensure that they indeed started playing by waiting for each of their lift on the playing semaphore. 
+    Thus we run both semUp and semDown 10 times, because we have 10 players (we're considering goalies as players often,
+    for the sake of simplicity of commenting) */
     for (int tot = 0; tot < NUMPLAYERS; tot++) {
         if (semUp(semgid, sh->playersWaitReferee)==-1){
             perror ("error on the up operation for semaphore access (RF)");
@@ -244,9 +244,8 @@ static void play ()
         exit (EXIT_FAILURE);
     }
 
-    /* TODO: insert your code here */
-    sh->fSt.st.refereeStat = REFEREEING;
-    saveState(nFic, &sh->fSt);
+    sh->fSt.st.refereeStat = REFEREEING;   /* Changes state to (R)EFEREEING */
+    saveState(nFic, &sh->fSt);             /* Saves the state */
 
     if (semUp (semgid, sh->mutex) == -1) {                                                        /* leave critical region */
         perror ("error on the up operation for semaphore access (RF)");
@@ -270,9 +269,8 @@ static void endGame ()
         exit (EXIT_FAILURE);
     }
 
-    /* TODO: insert your code here */
-    sh->fSt.st.refereeStat = ENDING_GAME;
-    saveState(nFic, &sh->fSt);
+    sh->fSt.st.refereeStat = ENDING_GAME;     /* Changes state to (E)NDING GAME */
+    saveState(nFic, &sh->fSt);                /* Saves the state */
 
 
     if (semUp (semgid, sh->mutex) == -1) {                                                        /* leave critical region */
@@ -280,7 +278,9 @@ static void endGame ()
         exit (EXIT_FAILURE);
     }
 
-    /* TODO: insert your code here */
+    /* In order to end the game the 10 players need to be able to perform the semDown one more time, for the playersWaitEnd semaphore,
+    so that's all the referee has yet to do, releasing the signal to no longer have anyone waiting for the game end. 
+    All the entities stop, presumably gracefully, and the simulation ends well! */
 
     for (int i = 0; i < NUMPLAYERS; i++)
         if (semUp(semgid,sh->playersWaitEnd)==-1){
