@@ -153,7 +153,7 @@ static void arrive(int id)
         exit (EXIT_FAILURE);
     }
 
-    usleep(1000*(200.0*random())/(RAND_MAX+1.0)+60.0);
+    usleep((200.0*random())/(RAND_MAX+1.0)+60.0);
 }
 
 /**
