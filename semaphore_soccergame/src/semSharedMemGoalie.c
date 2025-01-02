@@ -153,7 +153,7 @@ static void arrive(int id)
         exit (EXIT_FAILURE);
     }
 
-    usleep((200.0*random())/(RAND_MAX+1.0)+60.0);
+    usleep(1000*(200.0*random())/(RAND_MAX+1.0)+60.0);
 }
 
 /**
@@ -209,7 +209,7 @@ static int goalieConstituteTeam (int id)
 
             //Registo dos players
             for (int i = 0; i < NUMTEAMPLAYERS; i = i + 1) {
-                if (semUp(semgid,sh->playersWaitTeam)==-1){ // Dá um up ao playersWaitTeam, para que os 4 players possam se registar na equipa
+                if (semUp(semgid,sh->playersWaitTeam)==-1){ // Dá um up ao playersWaitTeam, para que os players possam se registar na equipa
                     perror ("error on the up operation for semaphore access (GL)"); //(ver ultimo if no caso do goalie, semelhante)
                     exit (EXIT_FAILURE);
                 }  
@@ -230,8 +230,8 @@ static int goalieConstituteTeam (int id)
                 if (semDown(semgid,sh->playerRegistered)==-1){
                     perror ("error on the up operation for semaphore access (PL)");
                     exit (EXIT_FAILURE);
-                } 
-            }
+                } //Bloqueia o processo do goalie até o jogador sinalizado (do semUp acima) registar-se na equipa 
+            }  
 
             ret = (sh->fSt).teamId; //Guarda o id da equipa onde o guarda-redes que forma a equipa vai ficar
             (sh->fSt).teamId = (sh->fSt).teamId + 1; //Atualiza o id da equipa seguinte

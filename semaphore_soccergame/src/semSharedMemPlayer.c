@@ -155,7 +155,7 @@ static void arrive(int id)
         exit (EXIT_FAILURE);
     }
 
-    usleep((200.0*random())/(RAND_MAX+1.0)+50.0);
+    usleep(1000*(200.0*random())/(RAND_MAX+1.0)+50.0);
 }
 
 /**
@@ -214,7 +214,7 @@ static int playerConstituteTeam (int id)
 
             // Registo dos players
             for (int i = 0; i < NUMTEAMPLAYERS-1; i += 1) {
-                if (semUp(semgid,sh->playersWaitTeam)==-1){ // Dá um up ao playersWaitTeam, para que os restantes 3 players
+                if (semUp(semgid,sh->playersWaitTeam)==-1){ // Dá um up ao playersWaitTeam, para que os restantes players
                     perror ("error on the up operation for semaphore access (PL)"); //possam se registar na equipa (ver ultimo if no caso do goalie, semelhante)
                     exit (EXIT_FAILURE);
                 }  
@@ -222,19 +222,19 @@ static int playerConstituteTeam (int id)
                 if (semDown(semgid,sh->playerRegistered)==-1){
                     perror ("error on the up operation for semaphore access (PL)");
                     exit (EXIT_FAILURE);
-                } //Blocks the player process until the signaled player (from the semUp above) registers itself with the team
+                } //Bloqueia o processo do player até o jogador sinalizado (do semUp acima) registar-se na equipa
             }
 
             // Registo do goalie
             for (int i =0;i<NUMTEAMGOALIES;i+=1){
-                if (semUp(semgid,sh->goaliesWaitTeam)==-1){ // Dá um up ao goaliesWaitTeam, para que o goalie possa se registar na equipa 
+                if (semUp(semgid,sh->goaliesWaitTeam)==-1){ // Dá um up ao goaliesWaitTeam, para que o(s) goalie(s) possa(m) se registar na equipa 
                     perror ("error on the up operation for semaphore access (PL)");
                     exit (EXIT_FAILURE);
                 } 
                 if (semDown(semgid,sh->playerRegistered)==-1){
                     perror ("error on the up operation for semaphore access (PL)");
                     exit (EXIT_FAILURE);
-                } //Blocks the player process until the signaled player (from the semUp above) registers itself with the team
+                } //Bloqueia o processo do player até o jogador sinalizado (do semUp acima) registar-se na equipa
             }
 
             ret = (sh->fSt).teamId; //Guarda o id da equipa onde o guarda-redes que forma a equipa vai ficar
